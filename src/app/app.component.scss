@@ -13,6 +13,24 @@
   .item {
     text-align: center;
     padding: 8px 0;
+    background: #f1e2be ; 
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8px;
+        align-items: center;
+    }
+  }
+
+  .icon {
+    color: #f2c864;
+
+    &.large {
+        font-size: 100px;
+        height: 100px;
+        width: 100px;
+    }
   }
 }
 
