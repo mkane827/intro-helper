@@ -13,6 +13,8 @@
     text-align: center;
     padding: 8px 0;
     background: #f1e2be;
+    border-radius: 12px;
+    margin-bottom: 8px;
 
     &.focus {
       background: #ecc6bf;
@@ -25,7 +27,17 @@
     &.contribution {
       background: #a7c3c4;
 
-      .icon {
+      .icon,
+      .top p {
+        color: #6d9496;
+      }
+    }
+
+    &.contribution {
+      background: #a7c3c4;
+
+      .icon,
+      .top p {
         color: #6d9496;
       }
     }
@@ -52,6 +64,7 @@
   }
 
   &Content {
+    font-size: 20px;
   }
 
   .icon {
