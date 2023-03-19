@@ -2,33 +2,34 @@
   color: #0b4251;
 }
 
-.main {
-  display: flex;
-}
-
-.sideNav {
+.lane {
   border-right: solid 1px black;
-  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 8px 8px;
+  grid-auto-rows: max-content;
 
-  .item {
+  &Title {
     text-align: center;
     padding: 8px 0;
     background: #f1e2be;
 
     &.focus {
-        background: #ecc6bf;
+      background: #ecc6bf;
 
-        .icon{
-            color: #f48676;
-        }
+      .icon {
+        color: #f48676;
+      }
     }
- &.contribution {
-        background: #a7c3c4;
 
-        .icon{
-            color: #6d9496;
-        }
+    &.contribution {
+      background: #a7c3c4;
+
+      .icon {
+        color: #6d9496;
+      }
     }
+
     .top {
       display: flex;
       justify-content: space-between;
@@ -46,9 +47,13 @@
     }
 
     .description {
-        color: #0b4251;
+      color: #0b4251;
+    }
   }
+
+  &Content {
   }
+
   .icon {
     color: #f2c864;
 
