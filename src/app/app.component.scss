@@ -1,3 +1,21 @@
 .title {
     color: red;
 }
+
+.main {
+    display: flex;
+}
+
+.sideNav {
+    border-right: solid 1px black;
+    flex: 1 1 auto;
+
+    .item {
+        text-align: center;
+        padding: 8px 0;
+    }
+}
+
+.content {
+    flex: 2 0 auto;
+}

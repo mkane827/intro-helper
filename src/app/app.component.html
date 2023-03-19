@@ -1,5 +1,30 @@
-<h1 class="title">{{title}}</h1>
-<input type="text" placeholder="New Intro Line" [(ngModel)]="newItem">
-{{newItem}}
+<header>
+  <h1 class="title">{{title}}</h1>
+</header>
+<main class="main">
+  <section class="sideNav">
+    <div class="item">
+      <mat-icon class="icon">home</mat-icon>
+      <p>Description Goes Here</p>
+    </div>
+    <div class="item">
+      <mat-icon class="icon">home</mat-icon>
+      <p>Description Goes Here</p>
+    </div>
+    <div class="item">
+      <mat-icon class="icon">home</mat-icon>
+      <p>Description Goes Here</p>
+    </div>
+  </section>
+  
+  <section class="content">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+      <mat-form-field>
+        <mat-label>New Intro Item</mat-label>
+        <input matInput placeholder="Remeber to use strong language" name="first" ngModel>
+      </mat-form-field>
+      <button>Submit</button>
+    </form>
+  </section>
+</main>
 
-<mat-icon>home</mat-icon>
