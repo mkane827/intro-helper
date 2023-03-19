@@ -1,5 +1,5 @@
 .title {
-  color: #4285F4;
+  color: #0b4251;
 }
 
 .main {
@@ -13,23 +13,49 @@
   .item {
     text-align: center;
     padding: 8px 0;
-    background: #f1e2be ; 
+    background: #f1e2be;
 
-    .top {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 8px;
-        align-items: center;
+    &.focus {
+        background: #ecc6bf;
+
+        .icon{
+            color: #f48676;
+        }
     }
-  }
+ &.contribution {
+        background: #a7c3c4;
 
+        .icon{
+            color: #6d9496;
+        }
+    }
+    .top {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 8px;
+      align-items: center;
+
+      p {
+        color: #f2c864;
+        font-weight: 900;
+      }
+
+      .icon {
+        color: #0b4251;
+      }
+    }
+
+    .description {
+        color: #0b4251;
+  }
+  }
   .icon {
     color: #f2c864;
 
     &.large {
-        font-size: 100px;
-        height: 100px;
-        width: 100px;
+      font-size: 100px;
+      height: 100px;
+      width: 100px;
     }
   }
 }
@@ -39,5 +65,5 @@
 }
 
 .graveyard {
-    display: none;
+  display: none;
 }

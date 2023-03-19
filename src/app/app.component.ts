@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Intro Helper';
+  title = 'Intro Guru';
   newItem = '';
 
   onSubmit(f: NgForm) {
