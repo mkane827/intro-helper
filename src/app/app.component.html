@@ -8,31 +8,47 @@
   <section class="lane">
     <div class="laneTitle credibility">
       <div class="top">
-        <p class="laneNumber">1</p>
+        <span class="laneNumber">1</span>
         <mat-icon class="icon info">info_outline</mat-icon>
       </div>
       <mat-icon class="icon large">history_edu</mat-icon>
       <p class="laneDescription">Credibility</p>
     </div>
-    <div class="laneContent">CARDS GO HERE</div>
+    <div class="laneContent">
+      <ul class="laneCards">
+        <li *ngFor="let card of credibilities">
+          <mat-card>
+            <mat-card-content> CONTENT {{ card }}</mat-card-content>
+          </mat-card>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <section class="lane">
     <div class="laneTitle focus">
       <div class="top">
-        <p class="laneNumber">2</p>
+        <span class="laneNumber">2</span>
         <mat-icon class="icon info">info_outline</mat-icon>
       </div>
       <mat-icon class="icon large">ads_click</mat-icon>
       <p class="laneDescription">Purposful Focus</p>
     </div>
-    <div class="laneContent">CARDS GO HERE</div>
+    <div class="laneContent">
+      <ul class="laneCards">
+        <li *ngFor="let card of focuses">
+          <mat-card>
+            <mat-card-content> CONTENT {{ card }}</mat-card-content>
+          </mat-card>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <section class="lane">
     <div class="laneTitle contribution">
       <div class="top">
-        <p class="laneNumber">3</p>
+        <span class="laneNumber">3</span>
         <mat-icon class="icon info">info_outline</mat-icon>
       </div>
       <mat-icon class="icon large" fontSet="material-symbols-outlined"
@@ -40,7 +56,15 @@
       >
       <p class="laneDescription">Contribution & Experience</p>
     </div>
-    <div class="laneContent">CARDS GO HERE</div>
+    <div class="laneContent">
+      <ul class="laneCards">
+        <li *ngFor="let card of contributions">
+          <mat-card>
+            <mat-card-content> CONTENT {{ card }}</mat-card-content>
+          </mat-card>
+        </li>
+      </ul>
+    </div>
   </section>
 </main>
 <div class="graveyard">
