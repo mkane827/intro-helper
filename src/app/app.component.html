@@ -6,13 +6,13 @@
 
 <main>
   <section class="lane">
-    <div class="laneTitle">
+    <div class="laneTitle credibility">
       <div class="top">
-        <p>1</p>
-        <mat-icon class="icon">info_outline</mat-icon>
+        <p class="laneNumber">1</p>
+        <mat-icon class="icon info">info_outline</mat-icon>
       </div>
       <mat-icon class="icon large">history_edu</mat-icon>
-      <p class="description">Credibility</p>
+      <p class="laneDescription">Credibility</p>
     </div>
     <div class="laneContent">CARDS GO HERE</div>
   </section>
@@ -20,11 +20,11 @@
   <section class="lane">
     <div class="laneTitle focus">
       <div class="top">
-        <p>2</p>
-        <mat-icon class="icon">info_outline</mat-icon>
+        <p class="laneNumber">2</p>
+        <mat-icon class="icon info">info_outline</mat-icon>
       </div>
       <mat-icon class="icon large">ads_click</mat-icon>
-      <p class="description">Purposful Focus</p>
+      <p class="laneDescription">Purposful Focus</p>
     </div>
     <div class="laneContent">CARDS GO HERE</div>
   </section>
@@ -32,18 +32,19 @@
   <section class="lane">
     <div class="laneTitle contribution">
       <div class="top">
-        <p>3</p>
-        <mat-icon class="icon">info_outline</mat-icon>
+        <p class="laneNumber">3</p>
+        <mat-icon class="icon info">info_outline</mat-icon>
       </div>
       <mat-icon class="icon large" fontSet="material-symbols-outlined"
         >monitoring</mat-icon
       >
-      <p class="description">Contribution & Experience</p>
+      <p class="laneDescription">Contribution & Experience</p>
     </div>
     <div class="laneContent">CARDS GO HERE</div>
   </section>
-
-  <section class="content graveyard">
+</main>
+<div class="graveyard">
+  <section class="content">
     <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
       <mat-form-field>
         <mat-label>New Intro Item</mat-label>
@@ -63,8 +64,7 @@
     <button mat-button color="warn">Warn</button>
     <button mat-button disabled>Disabled</button>
   </section>
-</main>
-<div class="graveyard">
+
   <mat-icon class="icon">insights</mat-icon>
   <mat-icon class="icon">auto_awesome</mat-icon>
 </div>

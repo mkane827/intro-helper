@@ -1,66 +1,55 @@
 .title {
   color: #0b4251;
+  text-align: center;
 }
 
 .lane {
   border-right: solid 1px black;
   display: grid;
-  grid-template-columns: 1fr 2fr;
   gap: 8px 8px;
   grid-auto-rows: max-content;
+  grid-template-columns: 1fr 2fr;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid black;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+  }
 
   &Title {
-    text-align: center;
-    padding: 8px 0;
-    background: #f1e2be;
     border-radius: 12px;
-    margin-bottom: 8px;
+    padding: 8px 0;
+    text-align: center;
+
+    &.credibility {
+      background: #f1e2be;
+      color: #f2c864;
+    }
 
     &.focus {
       background: #ecc6bf;
-
-      .icon {
-        color: #f48676;
-      }
+      color: #f48676;
     }
 
     &.contribution {
       background: #a7c3c4;
-
-      .icon,
-      .top p {
-        color: #6d9496;
-      }
-    }
-
-    &.contribution {
-      background: #a7c3c4;
-
-      .icon,
-      .top p {
-        color: #6d9496;
-      }
+      color: #6d9496;
     }
 
     .top {
+      align-items: center;
       display: flex;
       justify-content: space-between;
       padding: 0 8px;
-      align-items: center;
-
-      p {
-        color: #f2c864;
-        font-weight: 900;
-      }
-
-      .icon {
-        color: #0b4251;
-      }
     }
+  }
 
-    .description {
-      color: #0b4251;
-    }
+  &Number {
+    font-weight: 900;
+  }
+
+  &Description {
+    color: #0b4251;
   }
 
   &Content {
@@ -68,7 +57,9 @@
   }
 
   .icon {
-    color: #f2c864;
+    &.info {
+      color: #0b4251;
+    }
 
     &.large {
       font-size: 100px;
@@ -76,10 +67,6 @@
       width: 100px;
     }
   }
-}
-
-.content {
-  flex: 2 0 auto;
 }
 
 .graveyard {
